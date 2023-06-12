@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cart">
+            <div class="subchart-port">
+                <div class="name">Order</div>
+                <div class="listCartPort"></div>
+                <div class="sum">
+                    <div class="price">Total Order: Rp.4000</div>
+                    <button class="add">BUY</button>
+                </div>
+            </div>
+            <div class="subchart-subs">
+                <div class="name">Subscriptions</div>
+                <div class="listCartSubscription"></div>
+                <div class="sum">
+                    <div class="price">Total Subscription: Rp.1000</div>
+                    <button class="add">BUY</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="center">
+            <div class="ports">
+                <h2>Ports</h2>
+                <div class="list">
+                    <div class="item" data-key="1">
+                        <div class="img">
+                            <img src="img1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 1</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="Remove(1)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="item" data-key="2">
+                        <div class="img">
+                            <img src="img2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 2</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="Remove(2)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="item" data-key="3">
+                        <div class="img">
+                            <img src="img3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 3</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="Remove(3)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-key="4">
+                        <div class="img">
+                            <img src="img4.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 4</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="Remove(4)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscriptions">
+                <h2>Subscriptions</h2>
+                <div class="list">
+                    <div class="item" data-key="1">
+                        <div class="img">
+                            <img src="img1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 1</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="RemoveSub(1)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="item" data-key="2">
+                        <div class="img">
+                            <img src="img2.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 2</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="RemoveSub(2)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+    
+                    <div class="item" data-key="3">
+                        <div class="img">
+                            <img src="img3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 3</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="RemoveSub(3)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="item" data-key="4">
+                        <div class="img">
+                            <img src="img4.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">Port 4</div>
+                            <div class="des">
+                                20G, LAG Enable, Location A <br> Terms 1 month
+                            </div>
+                            <div class="price">Rp.1000/Mo</div>
+                            <button class="edit"><i class="fa-solid fa-edit"></i></button>
+                            <button class="add">Add New Connection</button>
+                            <button class="remove" onclick="RemoveSub(4)"><i class="fa-solid fa-trash-can"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
